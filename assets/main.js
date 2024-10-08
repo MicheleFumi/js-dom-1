@@ -16,8 +16,47 @@ const buttonEl = document.getElementById("button")
 const imgEl = document.getElementById("img")
 console.log(imgEl);
 
-// CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
-button.addEventListener('click', () => {
-    buttonEl.innerHTML= "spegni"
-    imgEl.src='./img/yellow_lamp.png'
-})
+let is_on = false
+
+if (buttonEl.innerHTML.includes("spegni")) {
+
+    // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
+    button.addEventListener('click', () => {
+
+        console.log("clicked");
+        // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
+        buttonEl.innerHTML = "spegni"
+        //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
+        imgEl.src = './assets/img/yellow_lamp.png'
+
+        if (buttonEl == "spegni") {
+            buttonEl.innerHTML = "accendi"
+        }
+    }
+    )
+} else {
+    // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
+   
+
+        console.log("clicked");
+        // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
+        buttonEl.innerHTML = "accendi"
+        //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
+        imgEl.src = './assets/img/white_lamp.png'
+
+        if (buttonEl == "accendi") {
+            buttonEl.innerHTML = "spegni"
+        }
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
