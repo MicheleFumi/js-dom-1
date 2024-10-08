@@ -19,5 +19,5 @@ console.log(imgEl);
 // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
 button.addEventListener('click', () => {
     buttonEl.innerHTML= "spegni"
-    imgEl='./img/yellow_lamp.png'
+    imgEl.src='./img/yellow_lamp.png'
 })
