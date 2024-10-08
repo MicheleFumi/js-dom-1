@@ -16,27 +16,26 @@ const buttonEl = document.getElementById("button")
 const imgEl = document.getElementById("img")
 console.log(imgEl);
 
-let is_on = false
-
-if (buttonEl.innerHTML.includes("spegni")) {
-
-    // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
-    button.addEventListener('click', () => {
-
-        console.log("clicked");
-        // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
-        buttonEl.innerHTML = "spegni"
-        //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
-        imgEl.src = './assets/img/yellow_lamp.png'
-
-        if (buttonEl == "spegni") {
-            buttonEl.innerHTML = "accendi"
-        }
-    }
-    )
-} else {
-    // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
+button.addEventListener('click', () => {
+// CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
+    console.log("clicked");
    
+   
+    if (buttonEl.innerHTML.includes("accendi")) {
+        //CREO LA CONDIZIONE DOVE SE IL TESTO DEL BOTTONE INCLUDE LA STRINGA ACCENDI, CAMBIA LA FOTO E IL TESTO E VICEVERSA.
+        
+         buttonEl.innerHTML = "spegni"
+          // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
+   
+        imgEl.src = './assets/img/yellow_lamp.png'
+         //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
+
+        
+        }
+
+    else {
+        // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
+
 
         console.log("clicked");
         // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
@@ -44,13 +43,11 @@ if (buttonEl.innerHTML.includes("spegni")) {
         //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
         imgEl.src = './assets/img/white_lamp.png'
 
-        if (buttonEl == "accendi") {
-            buttonEl.innerHTML = "spegni"
-        }
-    
-    
+       
+    }
 
-}
+})
+
 
 
 
