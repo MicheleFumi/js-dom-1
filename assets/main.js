@@ -14,16 +14,20 @@ console.log("ciao");
 //CREO DUE VARIABILI DOVE RICHIAMO GLI ELEMENTI IN PAGINA HTML
 const buttonEl = document.getElementById("button")
 const imgEl = document.getElementById("img")
-console.log(imgEl);
+
+//LOGGA IL PERCORSO DELL'IMMAGINE
+console.log(imgEl.getAttribute('src'));
 
 button.addEventListener('click', () => {
 // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
-    console.log("clicked");
-   
+    
    
     if (buttonEl.innerHTML.includes("accendi")) {
         //CREO LA CONDIZIONE DOVE SE IL TESTO DEL BOTTONE INCLUDE LA STRINGA ACCENDI, CAMBIA LA FOTO E IL TESTO E VICEVERSA.
         
+        console.log("it's on");
+   
+
          buttonEl.innerHTML = "spegni"
           // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
    
@@ -37,11 +41,10 @@ button.addEventListener('click', () => {
         // CREO L'EVENTO AL CLICK DOVE QUANDO CLICCO IL BOTTONE CAMBIO IMMAGINE
 
 
-        console.log("clicked");
+        console.log("it's off");
         // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
         buttonEl.innerHTML = "accendi"
-
-        console.log(imgEl.src);
+        
         
         //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
         imgEl.src = './assets/img/white_lamp.png'
