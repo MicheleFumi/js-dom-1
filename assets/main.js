@@ -40,6 +40,9 @@ button.addEventListener('click', () => {
         console.log("clicked");
         // CREO L'EVENTO DOVE AL CLICK IL TESTO DEL BOTTONE DIVENTA SPEGNI
         buttonEl.innerHTML = "accendi"
+
+        console.log(imgEl.src);
+        
         //CREO L'EVENTO DOVE AL CLICK L'IMMAGINE CAMBIA
         imgEl.src = './assets/img/white_lamp.png'
 
